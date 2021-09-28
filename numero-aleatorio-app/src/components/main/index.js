@@ -1,5 +1,4 @@
-import React from "react";
-import {useState} from "react";
+import React,{useState,DataHTMLAttributes} from "react";
 import "./style.css";
 function Main(){    
 
@@ -8,11 +7,10 @@ function Main(){
     function SortearNumero(){
         var num = Math.floor(Math.random()*100);
         SetNumero(num); //Atribui o numero gerado a variavel SetNumero, que transforma na tela atravez de numeroGerado
-
+        DataHTMLAttributes
     }
 
     return(
-        
         <div className="container">
             <h3>Numero Aleatório</h3>
             <h1>{numeroGerado}</h1>
